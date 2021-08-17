@@ -1,0 +1,10 @@
+.infoCardContainer.infoCardContainer--infoCardStyle {
+  height: 80vh;
+  border: 0;
+  background-position: bottom;
+}
+
+.infoCardHeadline.infoCardHeadline--infoCardStyle,
+.infoCardSubhead.infoCardSubhead--infoCardStyle {
+  color: #f0f0f0;
+}

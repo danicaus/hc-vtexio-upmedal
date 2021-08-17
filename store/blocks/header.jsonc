@@ -1,0 +1,192 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktopLine1", "flex-layout.row#desktopLine2"]
+  },
+  "flex-layout.row#desktopLine1": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Upmedal Logo",
+      "href": "/",
+      "url": "assets/upmedal-logo.png",
+      "width": 132,
+      "height": 32,
+      "mobileWidth": 90,
+      "mobileHeight": 32
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.row#desktopLine2": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categories"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "children": [
+      "menu-item#promocao",
+      "menu-item#next-events",
+      "menu-item#best",
+      "menu-item#categories"
+    ]
+  },
+  "menu-item#promocao": {
+    "props": {
+      "id": "menu-item-promocao",
+      "highlight": true,
+      "itemProps": {
+        "text": "Promoção"
+      }
+    }
+  },
+  "menu-item#next-events": {
+    "props": {
+      "id": "menu-item-next-events",
+      "highlight": true,
+      "itemProps": {
+        "text": "Próximos eventos"
+      }
+    }
+  },
+  "menu-item#best": {
+    "props": {
+      "id": "menu-item-best",
+      "highlight": true,
+      "itemProps": {
+        "text": "Mais vendidos"
+      }
+    }
+  },
+  "menu-item#categories": {
+    "props": {
+      "id": "menu-item-categories",
+      "highlight": true,
+      "experimentalOptimizeRendering": true,
+      "itemProps": {
+        "text": "Categorias"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#categories"]
+  },
+  "vtex.menu@2.x:submenu#categories": {
+    "children": ["vtex.menu@2.x:menu#submenucategories"]
+  },
+  "vtex.menu@2.x:menu#submenucategories": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-medals",
+          "highlight": true,
+          "itemProps": {
+            "text": "Porta-medalhas"
+          }
+        },
+        {
+          "id": "menu-item-shirts",
+          "highlight": true,
+          "itemProps": {
+            "text": "Camisas"
+          }
+        },
+        {
+          "id": "menu-item-windsuits",
+          "highlight": true,
+          "itemProps": {
+            "text": "Corta-ventos"
+          }
+        },
+        {
+          "id": "menu-item-cups",
+          "highlight": true,
+          "itemProps": {
+            "text": "Canecas"
+          }
+        },
+        {
+          "id": "menu-item-hats",
+          "highlight": true,
+          "itemProps": {
+            "text": "Canecas"
+          }
+        },
+        {
+          "id": "menu-item-by-events",
+          "highlight": true,
+          "itemProps": {
+            "text": "Por evento"
+          }
+        },
+        {
+          "id": "menu-item-other",
+          "highlight": true,
+          "itemProps": {
+            "text": "Outros"
+          }
+        }
+      ]
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "logo",
+      "search-bar",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  }
+}
