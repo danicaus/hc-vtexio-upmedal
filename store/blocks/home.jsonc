@@ -20,7 +20,10 @@
     }
   },
   "flex-layout.row": {
-    "children": ["slider-layout#home"]
+    "children": ["slider-layout#home"],
+    "props": {
+      "horizontalAlign": "center"
+    }
   },
   "slider-layout#home": {
     "props": {
@@ -48,7 +51,7 @@
     }
   },
   "image#destaque2":  {
-    "props" : {
+    "props": {
       "src": "assets/banner-guerreiros.png",
       "title": "Corrida Grandes Guerreiros",
       "alt": "Kit de camisa preta, troféu base preta, metal com descrição e símbolo Grandes guerreiros, caneca branca com símbolo dos grandes guerreiros em preto.",

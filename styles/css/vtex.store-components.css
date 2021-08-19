@@ -1,5 +1,5 @@
 .infoCardContainer.infoCardContainer--infoCardStyle {
-  height: 80vh;
+  height: calc(100vh - 134.4px);
   border: 0;
   background-position: bottom;
 }
@@ -8,3 +8,26 @@
 .infoCardSubhead.infoCardSubhead--infoCardStyle {
   color: #f0f0f0;
 }
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input),
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: transparent;
+}
+
+.searchBarIcon {
+  color: #ffffff;
+}
+
+:global(.vtex-slider-layout-0-x-slideChildrenContainer) .imageElement {
+  border-radius: 20px;
+}
+
+
+

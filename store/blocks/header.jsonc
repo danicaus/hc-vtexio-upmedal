@@ -19,16 +19,14 @@
   "flex-layout.row#desktopLine1": {
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "middle",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
       "search-bar",
-      "flex-layout.col#spacer",
       "minicart.v2"
     ]
   },
@@ -43,15 +41,10 @@
       "title": "Upmedal Logo",
       "href": "/",
       "url": "assets/upmedal-logo.png",
-      "width": 132,
-      "height": 32,
+      "width": 150,
+      "height": 35.7,
       "mobileWidth": 90,
       "mobileHeight": 32
-    }
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
     }
   },
   "flex-layout.row#desktopLine2": {
@@ -77,7 +70,7 @@
   "menu-item#promocao": {
     "props": {
       "id": "menu-item-promocao",
-      "highlight": true,
+      "highlight": false,
       "itemProps": {
         "text": "Promoção"
       }

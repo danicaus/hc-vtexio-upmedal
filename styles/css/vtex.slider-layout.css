@@ -1,0 +1,23 @@
+.slideChildrenContainer {
+  padding-top: 2rem;
+  position: relative;
+}
+
+.sliderArrows {
+  position: absolute;
+  bottom: -40px;
+  color: #59ff00;
+}
+
+.paginationDotsContainer  {
+  position: absolute;
+  bottom: -25px;
+}
+
+.paginationDot--isActive  {
+  background-color: #59ff00;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow) :global(.vtex-store-components-3-x-container) {
+  max-width: 900px;
+}

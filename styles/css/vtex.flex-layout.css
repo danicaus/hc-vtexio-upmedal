@@ -1,3 +1,9 @@
-.flexRowContent {
+:global(.vtex-sticky-layout-0-x-container--sticky-header) :global(.vtex-flex-layout-0-x-flexRowContent){
+  justify-content: space-between;
+  padding-top: 10px;
   background-color: #212121;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  width: 50vw;
 }
