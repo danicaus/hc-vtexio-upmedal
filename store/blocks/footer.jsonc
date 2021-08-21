@@ -1,26 +1,121 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
-  },
-  "footer-layout.desktop": { 
-    "children": [
-      "flex-layout.row#footer"
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
     ]
   },
-  "footer-layout.mobile": { 
+  "footer-layout.desktop": {
     "children": [
-      "flex-layout.row#footer"
+      "sticky-layout#footer"
     ]
   },
-  "flex-layout.row#footer": { 
+  "footer-layout.mobile": {
     "children": [
-      "image"
+      "sticky-layout#footer"
     ]
   },
-  "image": {
+  "sticky-layout#footer": {
     "props": {
-      "width": 100,
-      "src": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg"
+      "position": "bottom"
+    },
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "children": [
+      "flex-layout.col#login",
+      "flex-layout.col#desafios",
+      "flex-layout.col#loja",
+      "flex-layout.col#suporte"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#login": {
+    "children": [
+      "image#login",
+      "rich-text#login"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#desafios": {
+    "children": [
+      "image#desafios",
+      "rich-text#desafios"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#loja": {
+    "children": [
+      "image#loja",
+      "rich-text#loja"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.col#suporte": {
+    "children": [
+      "image#suporte",
+      "rich-text#suporte"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle"
+    }
+  },
+  "image#login": {
+    "props": {
+      "src": "assets/footerIcons/user.png",
+      "maxHeight": 24
+    }
+  },
+  "image#desafios": {
+    "props": {
+      "src": "assets/footerIcons/trophy.png",
+      "maxHeight": 24
+    }
+  },
+  "image#loja": {
+    "props": {
+      "src": "assets/footerIcons/cart.png",
+      "maxHeight": 24
+    }
+  },
+  "image#suporte": {
+    "props": {
+      "src": "assets/footerIcons/whatsapp.png",
+      "maxHeight": 24
+    }
+  },
+  "rich-text#login": {
+    "props": {
+      "text": "Login"
+    }
+  },
+  "rich-text#desafios": {
+    "props": {
+      "text": "Desafios"
+    }
+  },
+  "rich-text#loja": {
+    "props": {
+      "text": "Loja"
+    }
+  },
+  "rich-text#suporte": {
+    "props": {
+      "text": "Suporte"
     }
   }
 }
