@@ -3,7 +3,11 @@
   text-transform: uppercase;
 }
 
-.menuItem::after {
+.menuItem {
+  height: 100%;
+}
+
+.menuItem::after{
   content: '';  
   display: flex;
   width: 100%;
@@ -15,4 +19,8 @@
 
 .menuItem:hover::after {
   background-color: #59ff00;
+}
+
+.submenuWrapper {
+  border: 0;
 }

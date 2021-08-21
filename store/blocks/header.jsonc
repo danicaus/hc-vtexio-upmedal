@@ -1,9 +1,15 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
   },
   "header-layout.desktop": {
     "children": [
@@ -14,9 +20,12 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktopLine1", "flex-layout.row#desktopLine2"]
+    "children": [
+      "flex-layout.row#headerLine1",
+      "flex-layout.row#headerLine2"
+    ]
   },
-  "flex-layout.row#desktopLine1": {
+  "flex-layout.row#headerLine1": {
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "middle",
@@ -34,7 +43,9 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "logo"
+    ]
   },
   "logo": {
     "props": {
@@ -43,11 +54,11 @@
       "url": "assets/upmedal-logo.png",
       "width": 150,
       "height": 35.7,
-      "mobileWidth": 90,
-      "mobileHeight": 32
+      "mobileWidth": 80,
+      "mobileHeight": 19.4
     }
   },
-  "flex-layout.row#desktopLine2": {
+  "flex-layout.row#headerLine2": {
     "props": {
       "horizontalAlign": "left",
       "verticalAlign": "center",
@@ -60,114 +71,90 @@
     ]
   },
   "vtex.menu@2.x:menu#categories": {
-    "children": [
-      "menu-item#promocao",
-      "menu-item#next-events",
-      "menu-item#best",
-      "menu-item#categories"
-    ]
-  },
-  "menu-item#promocao": {
-    "props": {
-      "id": "menu-item-promocao",
-      "highlight": false,
-      "itemProps": {
-        "text": "Promoção"
-      }
-    }
-  },
-  "menu-item#next-events": {
-    "props": {
-      "id": "menu-item-next-events",
-      "highlight": true,
-      "itemProps": {
-        "text": "Próximos eventos"
-      }
-    }
-  },
-  "menu-item#best": {
-    "props": {
-      "id": "menu-item-best",
-      "highlight": true,
-      "itemProps": {
-        "text": "Mais vendidos"
-      }
-    }
-  },
-  "menu-item#categories": {
-    "props": {
-      "id": "menu-item-categories",
-      "highlight": true,
-      "experimentalOptimizeRendering": true,
-      "itemProps": {
-        "text": "Categorias"
-      }
-    },
-    "blocks": ["vtex.menu@2.x:submenu#categories"]
-  },
-  "vtex.menu@2.x:submenu#categories": {
-    "children": ["vtex.menu@2.x:menu#submenucategories"]
-  },
-  "vtex.menu@2.x:menu#submenucategories": {
     "props": {
       "items": [
         {
-          "id": "menu-item-medals",
-          "highlight": true,
+          "id": "menu-item-promocao",
+          "highlight": false,
           "itemProps": {
-            "text": "Porta-medalhas"
+            "text": "Promoção"
           }
         },
         {
-          "id": "menu-item-shirts",
+          "id": "menu-item-corinthians",
           "highlight": true,
           "itemProps": {
-            "text": "Camisas"
+            "text": "Corinthians"
           }
         },
         {
-          "id": "menu-item-windsuits",
+          "id": "menu-item-palmeiras",
           "highlight": true,
           "itemProps": {
-            "text": "Corta-ventos"
+            "text": "Palmeiras"
           }
         },
         {
-          "id": "menu-item-cups",
+          "id": "menu-item-signos",
           "highlight": true,
           "itemProps": {
-            "text": "Canecas"
+            "text": "Signos"
           }
         },
         {
-          "id": "menu-item-hats",
+          "id": "menu-item-divertidos",
           "highlight": true,
           "itemProps": {
-            "text": "Canecas"
+            "text": "Divertidos"
           }
         },
         {
-          "id": "menu-item-by-events",
+          "id": "menu-item-7maravilhas",
           "highlight": true,
           "itemProps": {
-            "text": "Por evento"
+            "text": "7 Maravilhas"
           }
         },
         {
-          "id": "menu-item-other",
+          "id": "menu-item-guerreiros",
           "highlight": true,
           "itemProps": {
-            "text": "Outros"
+            "text": "Guerreiros"
+          }
+        },
+        {
+          "id": "menu-item-album1",
+          "highlight": true,
+          "itemProps": {
+            "text": "Álbum 1"
+          }
+        },
+        {
+          "id": "menu-item-album2",
+          "highlight": true,
+          "itemProps": {
+            "text": "Álbum 2"
+          }
+        },
+        {
+          "id": "menu-item-album3",
+          "highlight": true,
+          "itemProps": {
+            "text": "Álbum 3"
           }
         }
       ]
     }
   },
   "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
+    "children": [
+      "sticky-layout#mobile"
+    ]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": [
+      "flex-layout.row#mobile"
+    ]
   },
   "flex-layout.row#mobile": {
     "children": [

@@ -1,8 +1,11 @@
 {
-  "store.home": { 
+  "store.home": {
     "blocks": [
       "info-card",
-      "flex-layout.row"
+      "rich-text#prominance",
+      "flex-layout.row#slider",
+      "rich-text#sale",
+      "flex-layout.row#products"
     ]
   },
   "info-card": {
@@ -10,19 +13,38 @@
       "isFullModeStyle": true,
       "textPosition": "right",
       "imageUrl": "assets/infocard-image.jpg",
-      "headline": "Roupas e acessórios <br>para as suas provas",
-      "subhead": "Prepare-se para as próximas provas do ano!",
+      "headline": "Torne suas vitórias pessoais memoráveis com a Upmedal",
       "callToActionMode": "button",
-      "callToActionText": "Próximas provas",
+      "callToActionText": "Decida sua próxima conquista",
       "callToActionUrl": "/sale/d",
       "textAlignment": "center",
       "blockClass": "infoCardStyle"
     }
   },
-  "flex-layout.row": {
-    "children": ["slider-layout#home"],
+  "rich-text#prominance": {
     "props": {
-      "horizontalAlign": "center"
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Desafios em destaque",
+      "textColor": "c-action-primary"
+    }
+  },
+  "flex-layout.row#slider": {
+    "children": [
+      "slider-layout#home"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "marginTop": 5,
+      "marginBottom": 10
+    }
+  },
+  "rich-text#sale": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Promoções",
+      "textColor": "c-action-primary"
     }
   },
   "slider-layout#home": {
@@ -40,22 +62,62 @@
       "showNavigationArrows": "desktopOnly",
       "blockClass": "transparentBackground"
     },
-    "children": ["image#destaque1", "image#destaque2"]
+    "children": [
+      "image#destaque1",
+      "image#destaque2"
+    ]
   },
-  "image#destaque1":  {
-    "props" : {
+  "image#destaque1": {
+    "props": {
       "src": "assets/banner-wood.png",
       "title": "Festival corrida Wood Sport",
       "alt": "Kit de corta vento preto, blusa amarela e base de troféu com personalização de nome, quilometragem da prova e tempo grátis. Promoção apenas 6 x R$12,56",
       "height": 320
     }
   },
-  "image#destaque2":  {
+  "image#destaque2": {
     "props": {
       "src": "assets/banner-guerreiros.png",
       "title": "Corrida Grandes Guerreiros",
       "alt": "Kit de camisa preta, troféu base preta, metal com descrição e símbolo Grandes guerreiros, caneca branca com símbolo dos grandes guerreiros em preto.",
       "height": 320
+    }
+  },
+  "flex-layout.row#products": {
+    "children": ["list-context.product-list#home"],
+    "props": {
+      "marginTop": 5,
+      "marginBottom": 10,
+      "blockClass": "flexHomeProducts"
+    }
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-image",
+      "product-rating-inline",
+      "product-summary-name",
+      "product-summary-price",
+      "add-to-cart-button"
+    ]
+  },
+  "list-context.product-list#home": {
+    "children": ["slider-layout#products"],
+    "blocks": ["product-summary.shelf#home"],
+    "props": {
+      "category": "20"
+    }
+  },
+  "slider-layout#products": {
+    "children": [],
+    "props": {
+      "itemsPerPage": { 
+        "desktop": 3, 
+        "tablet": 2, 
+        "phone": 1 
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "homeProducts"
     }
   }
 }

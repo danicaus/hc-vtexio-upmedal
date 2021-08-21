@@ -9,6 +9,11 @@
   color: #f0f0f0;
 }
 
+.infoCardCallActionContainer :global(.vtex-button) {
+  background-color: #303030;
+  border-color: #303030;
+}
+
 .searchBarContainer :global(.vtex-input-prefix__group) {
   border: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.7);
