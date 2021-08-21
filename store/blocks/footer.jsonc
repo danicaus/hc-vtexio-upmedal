@@ -17,105 +17,188 @@
   },
   "sticky-layout#footer": {
     "props": {
-      "position": "bottom"
+      "position": "bottom",
+      "blockClass": "footer"
     },
     "children": [
       "flex-layout.row#footer"
     ]
   },
   "flex-layout.row#footer": {
-    "children": [
-      "flex-layout.col#login",
-      "flex-layout.col#desafios",
-      "flex-layout.col#loja",
-      "flex-layout.col#suporte"
-    ],
-    "props": {
-      "horizontalAlign": "center"
-    }
-  },
-  "flex-layout.col#login": {
-    "children": [
-      "image#login",
-      "rich-text#login"
-    ],
     "props": {
       "horizontalAlign": "center",
-      "verticalAlign": "middle"
-    }
-  },
-  "flex-layout.col#desafios": {
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
     "children": [
-      "image#desafios",
-      "rich-text#desafios"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle"
-    }
+      "vtex.menu@2.x:menu#footer"
+    ]
   },
-  "flex-layout.col#loja": {
-    "children": [
-      "image#loja",
-      "rich-text#loja"
-    ],
+  "vtex.menu@2.x:menu#footer": {
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle"
-    }
-  },
-  "flex-layout.col#suporte": {
-    "children": [
-      "image#suporte",
-      "rich-text#suporte"
-    ],
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "middle"
-    }
-  },
-  "image#login": {
-    "props": {
-      "src": "assets/footerIcons/user.png",
-      "maxHeight": 24
-    }
-  },
-  "image#desafios": {
-    "props": {
-      "src": "assets/footerIcons/trophy.png",
-      "maxHeight": 24
-    }
-  },
-  "image#loja": {
-    "props": {
-      "src": "assets/footerIcons/cart.png",
-      "maxHeight": 24
-    }
-  },
-  "image#suporte": {
-    "props": {
-      "src": "assets/footerIcons/whatsapp.png",
-      "maxHeight": 24
-    }
-  },
-  "rich-text#login": {
-    "props": {
-      "text": "Login"
-    }
-  },
-  "rich-text#desafios": {
-    "props": {
-      "text": "Desafios"
-    }
-  },
-  "rich-text#loja": {
-    "props": {
-      "text": "Loja"
-    }
-  },
-  "rich-text#suporte": {
-    "props": {
-      "text": "Suporte"
+      "items": [
+        {
+          "id": "menu-footer-login",
+          "type": "custom",
+          "iconId": "hpa-login",
+          "itemProps": {
+            "text": "Login",
+            "type": "internal"
+          },
+          "iconProps": {
+            "id": "hpa-login",
+            "size": 24,
+            "viewBox": "0 0 24 24",
+            "activeClassName": "iconActive"
+          }
+        },
+        {
+          "id": "menu-footer-challenges",
+          "type": "custom",
+          "iconId": "hpa-challenges",
+          "itemProps": {
+            "text": "Desafios"
+          },
+          "iconProps": {
+            "id": "hpa-challenges",
+            "size": 24,
+            "viewBox": "0 0 24 24",
+            "activeClassName": "iconActive"
+          }
+        },
+        {
+          "id": "menu-footer-store",
+          "type": "custom",
+          "iconId": "hpa-cart",
+          "itemProps": {
+            "text": "Loja"
+          },
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 24,
+            "viewBox": "0 0 24 24",
+            "activeClassName": "iconActive"
+          }
+        },
+        {
+          "id": "menu-footer-support",
+          "type": "custom",
+          "iconId": "hpa-support",
+          "itemProps": {
+            "text": "Suporte"
+          },
+          "iconProps": {
+            "id": "hpa-support",
+            "size": 24,
+            "viewBox": "0 0 24 24",
+            "activeClassName": "iconActive"
+          }
+        }
+      ]
     }
   }
+
+  
+  
 }
+
+// "flex-layout.row#footer": {
+//   "children": [
+//     "flex-layout.col#login",
+//     "flex-layout.col#desafios",
+//     "flex-layout.col#loja",
+//     "flex-layout.col#suporte"
+//   ],
+//   "props": {
+//     "horizontalAlign": "center"
+//   }
+// },
+// "flex-layout.col#login": {
+//   "children": [
+//     "image#login",
+//     "rich-text#login"
+//   ],
+//   "props": {
+//     "horizontalAlign": "center",
+//     "verticalAlign": "middle"
+//   }
+// },
+// "flex-layout.col#desafios": {
+//   "children": [
+//     "image#desafios",
+//     "rich-text#desafios"
+//   ],
+//   "props": {
+//     "horizontalAlign": "center",
+//     "verticalAlign": "middle"
+//   }
+// },
+// "flex-layout.col#loja": {
+//   "children": [
+//     "image#loja",
+//     "rich-text#loja"
+//   ],
+//   "props": {
+//     "horizontalAlign": "center",
+//     "verticalAlign": "middle"
+//   }
+// },
+// "flex-layout.col#suporte": {
+//   "children": [
+//     "image#suporte",
+//     "rich-text#suporte"
+//   ],
+//   "props": {
+//     "horizontalAlign": "center",
+//     "verticalAlign": "middle"
+//   }
+// },
+// "image#login": {
+//   "props": {
+//     "src": "assets/footerIcons/user.png",
+//     "maxHeight": 24
+//   }
+// },
+// "image#desafios": {
+//   "props": {
+//     "src": "assets/footerIcons/trophy.png",
+//     "maxHeight": 24
+//   }
+// },
+// "image#loja": {
+//   "props": {
+//     "src": "assets/footerIcons/cart.png",
+//     "maxHeight": 24
+//   }
+// },
+// "image#suporte": {
+//   "props": {
+//     "src": "assets/footerIcons/whatsapp.png",
+//     "maxHeight": 24
+//   }
+// },
+// "rich-text#login": {
+//   "props": {
+//     "text": "Login",
+//     "textColor": "c-action-secondary"
+//   }
+// },
+// "rich-text#desafios": {
+//   "props": {
+//     "text": "Desafios",
+//     "textColor": "c-action-secondary"
+//   }
+// },
+// "rich-text#loja": {
+//   "props": {
+//     "text": "Loja",
+//     "textColor": "c-action-secondary"
+//   }
+// },
+// "rich-text#suporte": {
+//   "props": {
+//     "text": "Suporte",
+//     "textColor": "c-action-secondary"
+//   }
+// }

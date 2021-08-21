@@ -121,29 +121,19 @@
           "itemProps": {
             "text": "Guerreiros"
           }
-        },
-        {
-          "id": "menu-item-album1",
-          "highlight": true,
-          "itemProps": {
-            "text": "Álbum 1"
-          }
-        },
-        {
-          "id": "menu-item-album2",
-          "highlight": true,
-          "itemProps": {
-            "text": "Álbum 2"
-          }
-        },
-        {
-          "id": "menu-item-album3",
-          "highlight": true,
-          "itemProps": {
-            "text": "Álbum 3"
-          }
         }
       ]
+    }
+  },
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#header"
+    }
+  },
+  "icon-cart#header": {
+    "props": {
+      "size": 24,
+      "viewBox": "0 0 24 24"
     }
   },
   "header-layout.mobile": {

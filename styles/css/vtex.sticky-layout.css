@@ -1,3 +1,4 @@
-.wrapper .container {
+.wrapper--footer .container {
   position: fixed;
+  background-color: #424242;
 }
