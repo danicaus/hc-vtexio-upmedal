@@ -7,7 +7,7 @@ import awsExports from "./src/aws-exports";
 import { useState } from 'react';
 Amplify.configure(awsExports);
 
-const CSS_HANDLES = ['title'] as const
+const CSS_HANDLES = ['LeadsFormContainer', 'LeadsFormTitle', 'LeadsFormInputContainer', 'LeadsFormLabel', 'LeadsFormInput', 'LeadsFormButton'] as const
 
 interface FormLeadProps {}
 
@@ -36,29 +36,28 @@ const LeadsForm: StorefrontFunctionComponent<FormLeadProps> = () => {
 
   return (
     <div>
-      <h3>Cadastre-se e ganhe desconto de 5% na primeira compra!</h3>
-      <form onSubmit={handleForm} className={`${handles.title} t-heading-2 fw3 w-100 c-muted-1 db tc`}>
-        <div>
-          <label htmlFor="personName">Nome</label>
-          <input onChange={e => setName(e.target.value)} type="text" name="personName" required id="personName" placeholder="Digite seu nome" />
+      <h3 className={`${handles.LeadsFormTitle} t-heading-2 fw3 w-100 c-muted-1 db tc`}>Cadastre-se e ganhe desconto de 5% na primeira compra!</h3>
+      <form className={`${handles.LeadsFormContainer}`} onSubmit={handleForm}>
+        <div className={`${handles.LeadsFormInputContainer}`}>
+          <label className={`${handles.LeadsFormLabel}`} htmlFor="personName">Nome</label>
+          <input className={`${handles.LeadsFormInput}`} onChange={e => setName(e.target.value)} type="text" name="personName" required id="personName" placeholder="Digite seu nome" />
         </div>
 
-        <div>
-          <label htmlFor="personEmail">E-mail</label>
-          <input onChange={e => setEmail(e.target.value)} type="email" pattern=".+@.+\.com" name="personEmail" id="personEmail" required placeholder="Digite seu email" />
+        <div className={`${handles.LeadsFormInputContainer}`}>
+          <label className={`${handles.LeadsFormLabel}`} htmlFor="personEmail">E-mail</label>
+          <input className={`${handles.LeadsFormInput}`} onChange={e => setEmail(e.target.value)} type="email" pattern=".+@.+\.com" name="personEmail" id="personEmail" required placeholder="Digite seu email" />
         </div>
 
-        <div>
-          <label htmlFor="personTel">Telefone</label>
-          <input onChange={e => setTelephone(e.target.value)} type="text" name="personTel" id="personTel" required placeholder="Digite seu telefone" />
+        <div className={`${handles.LeadsFormInputContainer}`}>
+          <label className={`${handles.LeadsFormLabel}`} htmlFor="personTel">Telefone</label>
+          <input className={`${handles.LeadsFormInput}`} onChange={e => setTelephone(e.target.value)} type="text" name="personTel" id="personTel" required placeholder="Digite seu telefone" />
         </div>
 
-        <button type="submit">Eu quero!</button>
+        <button className={`${handles.LeadsFormButton}`} type="submit">Eu quero!</button>
       </form>
     </div>
   )
 }
-
 
 // interface TitleProps {
 //   title: string

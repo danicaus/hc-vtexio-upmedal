@@ -1,0 +1,43 @@
+.LeadsFormContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.LeadsFormTitle {
+  font-size: 1.5rem;
+  color: #3c8f10;
+  text-transform: uppercase;
+  padding: 2rem 2rem 1rem 2rem;
+  margin: 0;
+}
+
+.LeadsFormInputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.LeadsFormLabel {
+  font-size: 1rem;
+  color: #8f8f8f;
+  margin-right: 1rem;
+} 
+
+.LeadsFormInput {
+  border-radius: 5px;
+  width: 80%;
+  padding: .5rem;
+}
+
+.LeadsFormButton {
+  background-color: #3c8f10;
+  margin: 1rem  auto;
+  padding: .8rem;
+  color: #202020;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
