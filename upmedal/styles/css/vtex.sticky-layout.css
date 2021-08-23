@@ -1,0 +1,8 @@
+.wrapper--footer .container {
+  position: fixed;
+  background-color: #424242;
+}
+
+.wrapper--headerSticky .container--headerSticky {
+  background-color: #212121;
+}

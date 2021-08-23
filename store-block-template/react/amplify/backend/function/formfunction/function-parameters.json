@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "storage": {
+      "hcupmedaldanicaus": [
+        "create",
+        "read"
+      ]
+    }
+  },
+  "lambdaLayers": []
+}

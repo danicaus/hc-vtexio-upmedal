@@ -1,0 +1,8 @@
+.flexRowContent.flexRowContent--HeaderRowOne {
+  justify-content: space-between;
+  padding: 10px 10px 0 10px;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  width: 50vw;
+}

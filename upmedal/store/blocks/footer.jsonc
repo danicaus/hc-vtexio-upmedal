@@ -1,0 +1,100 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "sticky-layout#footer"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "sticky-layout#footer"
+    ]
+  },
+  "sticky-layout#footer": {
+    "props": {
+      "position": "bottom",
+      "blockClass": "footer"
+    },
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    },
+    "children": [
+      "vtex.menu@2.x:menu#footer"
+    ]
+  },
+  "vtex.menu@2.x:menu#footer": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-footer-login",
+          "type": "custom",
+          "iconId": "hpa-login",
+          "itemProps": {
+            "text": "Login"
+          },
+          "iconProps": {
+            "id": "hpa-login",
+            "size": 24,
+            "viewBox": "0 0 24 24"
+          }
+        },
+        {
+          "id": "menu-footer-challenges",
+          "type": "custom",
+          "iconId": "hpa-challenges",
+          "blockClass": "footerActive",
+          "itemProps": {
+            "text": "Desafios"
+          },
+          "iconProps": {
+            "id": "hpa-challenges",
+            "size": 24,
+            "viewBox": "0 0 24 24"
+          }
+        },
+        {
+          "id": "menu-footer-store",
+          "type": "custom",
+          "iconId": "hpa-cart",
+          "itemProps": {
+            "text": "Loja"
+          },
+          "iconProps": {
+            "id": "hpa-cart",
+            "size": 24,
+            "viewBox": "0 0 24 24"
+          }
+        },
+        {
+          "id": "menu-footer-support",
+          "type": "custom",
+          "iconId": "hpa-support",
+          "itemProps": {
+            "text": "Suporte",
+            "href": "https://api.whatsapp.com/send?phone=5511964335064&text=D%C3%BAvidas%20Upmedal",
+            "target": "_blank"
+          },
+          "iconProps": {
+            "id": "hpa-support",
+            "size": 24,
+            "viewBox": "0 0 24 24"
+          }
+        }
+      ]
+    }
+  }
+}

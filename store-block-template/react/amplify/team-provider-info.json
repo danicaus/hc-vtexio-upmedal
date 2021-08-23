@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hcupmedaldanicaus-dev-165743-authRole",
+      "UnauthRoleArn": "arn:aws:iam::162597857771:role/amplify-hcupmedaldanicaus-dev-165743-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::162597857771:role/amplify-hcupmedaldanicaus-dev-165743-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-hcupmedaldanicaus-dev-165743-deployment",
+      "UnauthRoleName": "amplify-hcupmedaldanicaus-dev-165743-unauthRole",
+      "StackName": "amplify-hcupmedaldanicaus-dev-165743",
+      "StackId": "arn:aws:cloudformation:us-east-1:162597857771:stack/amplify-hcupmedaldanicaus-dev-165743/39361ed0-0383-11ec-a6e5-12709ad3d671",
+      "AmplifyAppId": "d3vwm071i3xu9o"
+    },
+    "categories": {
+      "function": {
+        "formfunction": {
+          "deploymentBucketName": "amplify-hcupmedaldanicaus-dev-165743-deployment",
+          "s3Key": "amplify-builds/formfunction-335358434d777a674f48-build.zip"
+        }
+      }
+    }
+  }
+}

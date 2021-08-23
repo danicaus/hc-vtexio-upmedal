@@ -1,0 +1,157 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "headerSticky"
+    },
+    "children": [
+      "flex-layout.row#headerLine1",
+      "flex-layout.row#headerLine2"
+    ]
+  },
+  "flex-layout.row#headerLine1": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "HeaderRowOne"
+    },
+    "children": [
+      "flex-layout.col#logo",
+      "search-bar",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "logo"
+    ]
+  },
+  "logo": {
+    "props": {
+      "title": "Upmedal Logo",
+      "href": "/",
+      "url": "assets/upmedal-logo.png",
+      "width": 150,
+      "height": 35.7,
+      "mobileWidth": 80,
+      "mobileHeight": 19.4
+    }
+  },
+  "flex-layout.row#headerLine2": {
+    "props": {
+      "horizontalAlign": "left",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "HeaderRowTwo"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#categories"
+    ]
+  },
+  "vtex.menu@2.x:menu#categories": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-promocao",
+          "highlight": false,
+          "itemProps": {
+            "text": "Promoção",
+            "categoryId": "20/24"
+          }
+        },
+        {
+          "id": "menu-item-corinthians",
+          "highlight": true,
+          "itemProps": {
+            "text": "Corinthians",
+            "categoryId": "20/22"
+          }
+        },
+        {
+          "id": "menu-item-palmeiras",
+          "highlight": true,
+          "itemProps": {
+            "text": "Palmeiras",
+            "categoryId": "20/23"
+          }
+        },
+        {
+          "id": "menu-item-signos",
+          "highlight": true,
+          "itemProps": {
+            "text": "Signos",
+            "categoryId": "20/21"
+          }
+        },
+        {
+          "id": "menu-item-divertidos",
+          "highlight": true,
+          "itemProps": {
+            "text": "Divertidos",
+            "categoryId": "20/25"
+          }
+        },
+        {
+          "id": "menu-item-guerreiros",
+          "highlight": true,
+          "itemProps": {
+            "text": "Guerreiros",
+            "categoryId": "20/27"
+          }
+        }
+      ]
+    }
+  },
+  "minicart.v2": {
+    "props": {
+      "MinicartIcon": "icon-cart#header"
+    }
+  },
+  "icon-cart#header": {
+    "props": {
+      "size": 24,
+      "viewBox": "0 0 24 24"
+    }
+  },
+  //Estrutura Mobile
+  "header-layout.mobile": {
+    "children": [
+      "sticky-layout#mobile"
+    ]
+  },
+  "sticky-layout#mobile": {
+    "props": {
+      "blockClass": "headerSticky"
+    },
+    "children": [
+      "flex-layout.row#headerLine1",
+      "flex-layout.row#headerLine2"
+    ]
+  }
+}

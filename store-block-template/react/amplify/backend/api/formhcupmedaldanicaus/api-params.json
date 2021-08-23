@@ -1,0 +1,35 @@
+{
+  "paths": [
+    {
+      "name": "/leads",
+      "lambdaFunction": "formfunction",
+      "privacy": {
+        "open": true
+      },
+      "policyResourceName": "/leads"
+    }
+  ],
+  "resourceName": "formhcupmedaldanicaus",
+  "apiName": "formhcupmedaldanicaus",
+  "functionArns": [
+    {
+      "lambdaFunction": "formfunction"
+    }
+  ],
+  "privacy": {
+    "auth": 0,
+    "unauth": 0,
+    "authRoleName": "amplify-hcupmedaldanicaus-dev-165743-authRole",
+    "unAuthRoleName": "amplify-hcupmedaldanicaus-dev-165743-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "formfunction",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}
